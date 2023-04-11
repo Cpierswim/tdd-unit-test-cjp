@@ -15,6 +15,10 @@ describe("capitalization tests", () => {
     expect(capitalizeWord("test")).toBe("Test");
   });
 
+  it('capitalizing "t" should be "T', () => {
+    expect(capitalizeWord("t")).toBe("T");
+  });
+
   it('capitalizing "test" should not be "TEST', () => {
     expect(capitalizeWord("TEST")).not.toBe("Test");
   });
@@ -23,6 +27,10 @@ describe("capitalization tests", () => {
 describe("second word tests", () => {
   it('getting the second word from "get second word" should be "second"', () => {
     expect(secondWord("get second word")).toBe("second");
+  });
+
+  it('getting the second word from "get second word" should be "second"', () => {
+    expect(secondWord("word")).toBe("");
   });
 
   it('getting the second word from "get second word" should not be "get"', () => {
